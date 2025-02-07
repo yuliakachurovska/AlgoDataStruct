@@ -16,7 +16,7 @@ def find_max_length(n, k, array):
         for i in array:
             sum += i // m
         
-        if sum >= k:  # 5 7
+        if sum >= k:
             left = m + 1
         else:
             right = m - 1

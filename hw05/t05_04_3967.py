@@ -14,7 +14,7 @@ def find_max_length(n, k, array):
         m = left + (right - left) // 2
         sum = 0
         for i in array:
-            sum += i // m   # 500 // 200 -> 2, 450 // 200 -> 2, 250 // 200 -> 1 ==> 5
+            sum += i // m
         
         if sum >= k:  # 5 7
             left = m + 1
@@ -27,9 +27,3 @@ if __name__ == '__main__':
     n, k = [int(i) for i in input().split()]
     arr = [int(input()) for _ in range(n)]
     print(find_max_length(n, k, arr))
-
-    # 4 11
-    # 802 4 2
-    # 743 3 2
-    # 457 2 1
-    # 539 2 1

@@ -26,7 +26,7 @@ class TelephoneBook:
 if __name__ == "__main__":
     n = int(input())
     numbers = list(map(int, input().split()))
-    book = TelephoneBook(size=1.5 * n)
+    book = TelephoneBook(size=2 * n)
     
     for num in numbers:
         book.set(num)
